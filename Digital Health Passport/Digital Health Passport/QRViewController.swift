@@ -23,6 +23,8 @@ class QRViewController: UIViewController {
         let transformImage = cilmage?.transformed(by: transform)
             let im = UIImage(ciImage: transformImage!)
             image.image = im
+            
+
         }
         // Do any additional setup after loading the view.
     }

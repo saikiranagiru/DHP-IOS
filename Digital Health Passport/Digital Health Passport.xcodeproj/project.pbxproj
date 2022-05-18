@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3F085FA527F40A5B0074C71A /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F085FA427F40A5B0074C71A /* DashboardViewController.swift */; };
+		3FA85EC72833FEB400202F09 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA85EC62833FEB400202F09 /* TestViewController.swift */; };
+		3FA85EC92833FEC200202F09 /* VaccineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA85EC82833FEC200202F09 /* VaccineViewController.swift */; };
 		3FAFC94627F4BD3E007364AC /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 3FAFC94527F4BD3E007364AC /* ArgumentParser */; };
 		3FAFC98827FAAF25007364AC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAFC98727FAAF25007364AC /* SignUpViewController.swift */; };
 		3FFEB57C27EE209A0080C02D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEB57B27EE209A0080C02D /* AppDelegate.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		3F085FA427F40A5B0074C71A /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		3FA85EC62833FEB400202F09 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		3FA85EC82833FEC200202F09 /* VaccineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineViewController.swift; sourceTree = "<group>"; };
 		3FAFC98727FAAF25007364AC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3FFEB57827EE209A0080C02D /* Digital Health Passport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Health Passport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFEB57B27EE209A0080C02D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				F83785AD28148AFC00BA4271 /* ReportViewController.swift */,
 				F83785B128149FC500BA4271 /* UIView.xib */,
 				F83785B52814B3B500BA4271 /* QRViewController.swift */,
+				3FA85EC62833FEB400202F09 /* TestViewController.swift */,
+				3FA85EC82833FEC200202F09 /* VaccineViewController.swift */,
 			);
 			path = "Digital Health Passport";
 			sourceTree = "<group>";
@@ -176,9 +182,11 @@
 			files = (
 				F83785AE28148AFC00BA4271 /* ReportViewController.swift in Sources */,
 				3FFEB58027EE209A0080C02D /* LoginViewController.swift in Sources */,
+				3FA85EC72833FEB400202F09 /* TestViewController.swift in Sources */,
 				3FFEB57C27EE209A0080C02D /* AppDelegate.swift in Sources */,
 				3FFEB57E27EE209A0080C02D /* SceneDelegate.swift in Sources */,
 				F83785B62814B3B500BA4271 /* QRViewController.swift in Sources */,
+				3FA85EC92833FEC200202F09 /* VaccineViewController.swift in Sources */,
 				3F085FA527F40A5B0074C71A /* DashboardViewController.swift in Sources */,
 				3FAFC98827FAAF25007364AC /* SignUpViewController.swift in Sources */,
 			);
