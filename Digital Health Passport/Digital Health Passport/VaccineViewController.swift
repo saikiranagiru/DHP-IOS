@@ -82,6 +82,7 @@ class VaccineViewController: UIViewController, UITableViewDelegate, UITableViewD
             destination.token = token
             destination.tx = Vaccinelist[(tableview.indexPathForSelectedRow?.row)!]
         }
+        
     }
 
     

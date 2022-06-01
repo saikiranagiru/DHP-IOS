@@ -51,6 +51,24 @@ class SignUpViewController: UIViewController {
     @IBAction func onSignup(_ sender: UIButton) {
         sender.isEnabled = false;
         postData();
+        displayLoginAlert()
+
+
+    }
+    
+    func displayLoginAlert() {
+
+        let alert = UIAlertController(title:"Registration successful",
+                                      message:"You may now login. Thank You!",
+                                      preferredStyle: UIAlertController.Style.alert)
+
+        let loginAction = UIAlertAction(title:"Ok",
+                                        style:UIAlertAction.Style.default) { (UIAlertAction) -> Void in
+        }
+
+        alert.addAction(loginAction)
+
+        self.present(alert, animated: true)
     }
     
     /*

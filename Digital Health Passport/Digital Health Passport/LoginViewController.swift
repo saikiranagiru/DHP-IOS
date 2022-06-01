@@ -21,7 +21,7 @@ struct LoginResponse: Codable {
 
 }
 
-
+var vSpinner : UIView?
 
 class LoginViewController: UIViewController {
     
@@ -32,15 +32,59 @@ class LoginViewController: UIViewController {
             return
         }
         LoginButton.isEnabled = false
+        self.showSpinner(onView: self.view)
+       // displayLoginAlert()
         postData()
+
     }
+    
+    
+    
+//    func displayLoginAlert() {
+//
+//        let alert = UIAlertController(title:"Login successful",
+//                                      message:"Thank You!",
+//                                      preferredStyle: UIAlertController.Style.alert)
+//
+//        let loginAction = UIAlertAction(title:"Ok",
+//                                        style:UIAlertAction.Style.default) { (UIAlertAction) -> Void in
+//        }
+//
+//        alert.addAction(loginAction)
+//
+//        self.present(alert, animated: true)
+//    }
     @IBOutlet weak var DHPID: UITextField!
     
     @IBOutlet weak var DHPPassword: UITextField!
     
+    @IBOutlet weak var activity: UIActivityIndicatorView!
+    
     @IBOutlet weak var LoginButton: UIButton!
     
     
+    func showSpinner(onView : UIView) {
+        let spinnerView = UIView.init(frame: onView.bounds)
+        spinnerView.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
+        let ai = UIActivityIndicatorView.init(style: .whiteLarge)
+        ai.startAnimating()
+        ai.center = spinnerView.center
+        
+        DispatchQueue.main.async {
+            spinnerView.addSubview(ai)
+            onView.addSubview(spinnerView)
+        }
+        
+        vSpinner = spinnerView
+    }
+    
+    func removeSpinner() {
+        DispatchQueue.main.async {
+            vSpinner?.removeFromSuperview()
+            vSpinner = nil
+        }
+    }
+
     var authToken: String = ""
     var user: User? = nil
     
@@ -139,7 +183,11 @@ class LoginViewController: UIViewController {
                //we will assign the courses to 'courseArray' in the CourseViewController
                destination.user = user
                destination.token = authToken
+               
+               
            }
+        
+ 
        }
     
 }

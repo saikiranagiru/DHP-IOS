@@ -22,6 +22,8 @@
 		F83785B228149FC500BA4271 /* UIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83785B128149FC500BA4271 /* UIView.xib */; };
 		F83785B42814A50100BA4271 /* sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F83785B32814A50100BA4271 /* sample.pdf */; };
 		F83785B62814B3B500BA4271 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83785B52814B3B500BA4271 /* QRViewController.swift */; };
+		FDEC3FD728359C6F003586DE /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = FDEC3FD628359C6F003586DE /* ArgumentParser */; };
+		FDEC3FD92836E339003586DE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC3FD82836E339003586DE /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,7 @@
 		F83785B128149FC500BA4271 /* UIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIView.xib; sourceTree = "<group>"; };
 		F83785B32814A50100BA4271 /* sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sample.pdf; sourceTree = "<group>"; };
 		F83785B52814B3B500BA4271 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		FDEC3FD82836E339003586DE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEC3FD728359C6F003586DE /* ArgumentParser in Frameworks */,
 				3FAFC94627F4BD3E007364AC /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +101,7 @@
 				F83785B52814B3B500BA4271 /* QRViewController.swift */,
 				3FA85EC62833FEB400202F09 /* TestViewController.swift */,
 				3FA85EC82833FEC200202F09 /* VaccineViewController.swift */,
+				FDEC3FD82836E339003586DE /* ProfileViewController.swift */,
 			);
 			path = "Digital Health Passport";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			name = "Digital Health Passport";
 			packageProductDependencies = (
 				3FAFC94527F4BD3E007364AC /* ArgumentParser */,
+				FDEC3FD628359C6F003586DE /* ArgumentParser */,
 			);
 			productName = "Digital Health Passport";
 			productReference = 3FFEB57827EE209A0080C02D /* Digital Health Passport.app */;
@@ -150,6 +156,7 @@
 			mainGroup = 3FFEB56F27EE209A0080C02D;
 			packageReferences = (
 				3FAFC94427F4BD3E007364AC /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				FDEC3FD528359C6F003586DE /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 			);
 			productRefGroup = 3FFEB57927EE209A0080C02D /* Products */;
 			projectDirPath = "";
@@ -182,6 +189,7 @@
 			files = (
 				F83785AE28148AFC00BA4271 /* ReportViewController.swift in Sources */,
 				3FFEB58027EE209A0080C02D /* LoginViewController.swift in Sources */,
+				FDEC3FD92836E339003586DE /* ProfileViewController.swift in Sources */,
 				3FA85EC72833FEB400202F09 /* TestViewController.swift in Sources */,
 				3FFEB57C27EE209A0080C02D /* AppDelegate.swift in Sources */,
 				3FFEB57E27EE209A0080C02D /* SceneDelegate.swift in Sources */,
@@ -418,10 +426,23 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		FDEC3FD528359C6F003586DE /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		3FAFC94527F4BD3E007364AC /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FAFC94427F4BD3E007364AC /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		FDEC3FD628359C6F003586DE /* ArgumentParser */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3FAFC94427F4BD3E007364AC /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
 			productName = ArgumentParser;

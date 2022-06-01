@@ -54,6 +54,8 @@ class DashboardViewController: UIViewController {
     }
     @IBOutlet weak var dhplbl: UILabel!
     
+    @IBAction func Profile(_ sender: UIBarButtonItem) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 //        tableViewOutlet.delegate = self
@@ -163,12 +165,18 @@ class DashboardViewController: UIViewController {
             }
             
             if transition == "vaccineSegue" {
-                let destination = segue.destination as! VaccineViewController
-                
-                destination.Vaccinelist = vaccinelist
+                            let destination = segue.destination as! VaccineViewController
+                            
+                            destination.Vaccinelist = vaccinelist
+                            destination.user = user
+                            destination.token = token
+            //                destination.tx = txs[(tableViewOutlet.indexPathForSelectedRow?.row)!]
+                        }
+            
+            if transition == "profileSegue" {
+                let destination = segue.destination as! ProfileViewController
                 destination.user = user
                 destination.token = token
-//                destination.tx = txs[(tableViewOutlet.indexPathForSelectedRow?.row)!]
             }
         }
     
